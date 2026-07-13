@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tailored — STUDIOFORMA</title>
+<meta name="description" content="STUDIOFORMA Tailored — l'atelier sartoriale per progetti su misura: residenze private d'alto livello e dimore storiche. Il sottodominio dedicato apre nelle prossime settimane." />
+<meta name="robots" content="noindex, follow" />
+<!-- Open Graph: anteprima quando il link viene condiviso -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="STUDIOFORMA" />
+<meta property="og:title" content="Tailored — l'atelier sartoriale di STUDIOFORMA" />
+<meta property="og:description" content="L'anello dedicato ai progetti su misura: residenze private d'alto livello, dimore storiche, interventi unici. Apre nelle prossime settimane." />
+<meta property="og:locale" content="it_IT" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tailored — l'atelier sartoriale di STUDIOFORMA" />
+<meta name="twitter:description" content="L'anello dedicato ai progetti su misura. Apre nelle prossime settimane." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f7f5f0; --paper-card:#fbf9f4;
+    --ink:#1a1a18; --ink-soft:#5a5a55; --ink-mute:#8a8a83;
+    --accent:#7a8d6e; --sage-soft:#b6c3a8;
+    --display:'Montserrat',sans-serif;
+    --serif:'Playfair Display','Times New Roman',serif;
+    --sans:'Poppins',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .coming-soon{
+    background:var(--paper);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    padding:120px 24px;
+  }
+  .coming-soon::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(ellipse 70% 40% at 50% 0%, rgba(122,141,110,.08) 0%, transparent 60%),
+      radial-gradient(ellipse 70% 40% at 50% 100%, rgba(122,141,110,.06) 0%, transparent 60%);
+    pointer-events:none;
+  }
+  .content{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    max-width:720px;
+    margin:0 auto;
+  }
+  .brand{
+    font-family:var(--display);
+    font-size:15px;
+    letter-spacing:.42em;
+    font-weight:500;
+    color:var(--ink);
+    margin-bottom:48px;
+  }
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    font-family:var(--display);
+    font-size:11px;
+    letter-spacing:.4em;
+    text-transform:uppercase;
+    font-weight:500;
+    color:var(--accent);
+    margin-bottom:32px;
+  }
+  .eyebrow .line{display:inline-block;width:36px;height:1px;background:var(--accent);}
+  .title{
+    font-family:var(--serif);
+    font-weight:400;
+    font-style:italic;
+    font-size:clamp(36px,5vw,60px);
+    line-height:1.1;
+    color:var(--ink);
+    margin-bottom:28px;
+    letter-spacing:-.01em;
+  }
+  .fregio{
+    margin:28px 0;
+    color:var(--sage-soft);
+    font-size:11px;
+    letter-spacing:1.2em;
+    font-family:var(--serif);
+    user-select:none;
+  }
+  .body{
+    font-family:var(--serif);
+    font-size:17px;
+    line-height:1.65;
+    color:var(--ink-soft);
+    margin:0 auto 48px;
+    max-width:560px;
+  }
+  .actions{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:32px;
+    flex-wrap:wrap;
+  }
+  .btn-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    padding:18px 38px;
+    font-family:var(--display);
+    font-size:11px;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    font-weight:500;
+    text-decoration:none;
+    background:var(--ink);
+    color:var(--paper);
+    border:1px solid var(--ink);
+    transition:background .3s,border-color .3s,padding .3s;
+  }
+  .btn-primary:hover{background:var(--accent);border-color:var(--accent);padding-right:44px;}
+  .link-secondary{
+    font-family:var(--display);
+    font-size:11px;
+    letter-spacing:.32em;
+    text-transform:uppercase;
+    font-weight:500;
+    color:var(--ink-soft);
+    text-decoration:none;
+    border-bottom:1px solid var(--ink-mute);
+    padding-bottom:6px;
+    transition:color .25s,border-color .25s;
+  }
+  .link-secondary:hover{color:var(--accent);border-color:var(--accent);}
+  .foot{
+    position:absolute;
+    bottom:28px;left:0;right:0;
+    text-align:center;
+    font-family:var(--display);
+    font-size:9px;
+    letter-spacing:.4em;
+    text-transform:uppercase;
+    color:var(--ink-mute);
+  }
+  @media (max-width:600px){
+    .actions{gap:20px;flex-direction:column;}
+    .brand{margin-bottom:36px;}
+  }
+</style>
+</head>
+<body>
+  <main class="coming-soon">
+    <div class="content">
+      <div class="brand">STUDIOFORMA</div>
+      <div class="eyebrow"><span class="line"></span>Anello TAILORED · in arrivo</div>
+      <h1 class="title">Tailored — l'atelier sartoriale apre presto.</h1>
+      <div class="fregio" aria-hidden="true">◆ ◆ ◆</div>
+      <p class="body">
+        STUDIOFORMA Tailored è l'anello dedicato ai progetti su misura: residenze private
+        d'alto livello, dimore storiche, interventi unici dove la complessità è parte
+        integrante del valore. Atelier d'autore, club inglese. Questo spazio dedicato
+        apre nelle prossime settimane. Nel frattempo, esplora il metodo SFGR e i nostri
+        sette step di lavoro integrato.
+      </p>
+      <div class="actions">
+        <a class="btn-primary" href="https://studioformasrl.com">Torna al sito<span aria-hidden="true">→</span></a>
+        <a class="link-secondary" href="https://studioformasrl.com/metodo">Esplora il metodo</a>
+      </div>
+    </div>
+    <div class="foot">STUDIOFORMA srl · Firenze · Architettura, Interni, Ingegneria</div>
+  </main>
+</body>
+</html>
